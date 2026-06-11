@@ -1,3 +1,6 @@
+
+/// <reference types="vite/client" />
+
 declare namespace JSX {
   interface IntrinsicElements {
     [elemName: string]: any;
@@ -46,5 +49,6 @@ declare module 'lucide-react' {
   export const Wallet: any;
   export const Zap: any;
 }
+
 
 declare module '*.css';
