@@ -1,6 +1,9 @@
 # SorobanCoop
 
 
+
+
+
 SorobanCoop is a decentralized cooperative savings and contribution platform built on Stellar Soroban. It helps communities create shared savings groups, contribute together, vote transparently, and manage cooperative funds with auditable records.
 
 ## Landing page
@@ -13,6 +16,21 @@ This repository includes a modern React, TypeScript, Tailwind CSS, Framer Motion
 npm install
 npm run dev
 ```
+
+
+`npm start` is also available as an alias for `npm run dev`.
+
+
+### Troubleshooting local npm commands
+
+If npm reports `EJSONPARSE`, your local `package.json` or a copied lockfile is invalid JSON. Replace `package.json` with the committed version, delete any partially generated `package-lock.json`, then run:
+
+```bash
+node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf8')); console.log('package.json OK')"
+npm install
+npm run dev
+```
+
 
 ### Production build
 
@@ -46,6 +64,8 @@ New events initialized with `CoopStorage::create_event` return an empty list unt
 ```bash
 cargo test
 ```
+
+
 > Decentralized cooperative savings and community fund management built on Soroban.
 
 ## Vision
@@ -371,4 +391,5 @@ By leveraging Soroban, we hope to provide a modern infrastructure layer for coop
 # License
 
 MIT
+
 
