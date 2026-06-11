@@ -1,0 +1,11 @@
+[package]
+name = "soroban-coop"
+version = "0.1.0"
+edition = "2021"
+description = "Core storage views for SorobanCoop cooperative savings flows."
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
